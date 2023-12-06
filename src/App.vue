@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- Step 3: Use the components -->
-    <MyHeader restaurantName="Your Pizza Place" />
+    <MyHeader restaurantName="Sai's Pizza Place" />
     <PizzaMenu :menu="menu" />
   </div>
 </template>
@@ -29,10 +29,10 @@ export default {
   methods: {
     // Promises
     async fetchMenu(){
-      const res = await fetch('https://pizza-r3s2.onrender.com/api');
-      const data = await res.json()
-      console.log(data)
-      return data
+      const res = await fetch('https://pizza-place-n8f7.onrender.com/api');
+      const data = await res.json();
+      console.log(data);
+      return data;
     }
   },
   async created(){
